@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <script src="https://aoacbipubsec-gse00014997.analytics.ocp.oraclecloud.com/dv/ui/api/v1/plugins/embedding/standalone/embedding.js"
+    type="text/javascript"></script>
+</head>
+
+<body>
+  <p>hello world</p>
+  <div style="position: absolute; width: calc(100% - 40px); height: calc(100% - 
+    120px)">
+
+    <oracle-dv project-path="/users/analyticteam/311_service_requests">
+    </oracle-dv>
+  </div>
+  <script>
+    requirejs(
+      [
+        'knockout',
+        'ojs/ojcore',
+        'ojs/ojknockout',
+        'ojs/ojcomposite',
+        'jet-composites/oracle-dv/loader'
+      ],
+      function (ko) {
+        ko.applyBindings();
+      }
+    );
+  </script>
+</body>
+
+</html>
